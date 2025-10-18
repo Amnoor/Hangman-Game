@@ -84,7 +84,7 @@ def hangman(secret_word):
 def help():
     print()
     print("This module contains the functions for the hangman game.")
-    print("There are 3 functions in this module:")
+    print("There are 4 functions in this module:")
     print("start(): This function prints a message that welcomes the user to the game.")
     print("difficulty(difficulty_level): This function takes a difficulty level as an argument and returns a random word from the corresponding list found in the hangman_variables module.")
     print("hangman(secret_word): This function takes a secret word that the difficulty function returns as an argument and runs the game.")
