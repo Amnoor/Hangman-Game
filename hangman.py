@@ -34,17 +34,24 @@ while is_running:
 #    Then I call the hangman() function from the hangman_module module to run the game.
     hangman.hangman(secret_word)
 
+#    Then I create a while loop that prompts the user to choose to play again or not.
     is_valid_boolen_choice = True
     while is_valid_boolen_choice:
+#        Then I assign a variable to the user's input.
         inputed_boolen = input("Do you want to play again? (yes(y) or no(n)): ").lower().strip()
+#        Then I check if the user's input is valid or not.
         match inputed_boolen:
+#            If the user's inputed "yes" or "y", then I set the is_valid_boolen_choice variable to False and set the is_running variable to True to start a new game.
             case "yes" | "y":
                 is_valid_boolen_choice = False
                 is_running = True
+                print()
+#            If the user's inputed "no" or "n", then I set the is_valid_boolen_choice variable to False, set the is_running variable to False, and print "Thanks for playing! Goodbye!" then end the game.
             case "no" | "n":
                 is_valid_boolen_choice = False
                 is_running = False
                 print("Thanks for playing! Goodbye!")
+#            If the user's input is not valid, then I print "Invalid input. Please enter yes(y) or no(n)." and set is_valid_boolen_choice to True so that the loop will continue until the user chooses a valid input.
             case _:
                 print("Invalid input. Please enter yes(y) or no(n).")
                 is_valid_boolen_choice = True
