@@ -17,15 +17,8 @@ This repository contains a simple implementation of the classic Hangman game. Th
 
 To play the Hangman game, You need to install 3 things:
 
-1. ```Git``` (Latest Version)
-2. ```Python``` (Latest version)
-3. ```Clone the Repository```:
-   
-   ```bash
-   git clone https://github.com/Amnoor/Hangman-Game.git
-   cd hangman-game
-   python hangman.py
-   ```
+1. Download the `Hangman Game v1.0.0.exe` from the Releases
+2. Run the `Hangman Game v1.0.0.exe`
 
 
 
