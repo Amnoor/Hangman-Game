@@ -12,7 +12,9 @@ import library.hangman_module as hangman
 # Then I call the start() function from the hangman_module module to print a welcome message.
 hangman.start()
 
+# Then I create a variable to keep track of whether the game is running or not.
 is_running = True
+# Then I create a while loop that runs the game as long as is_running is True.
 while is_running:
 #    Then create a while loop that prompts the user to choose a valid difficulty level.
     is_valid_difficulty_choice = True
