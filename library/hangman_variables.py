@@ -2,6 +2,17 @@
 # This is a module that contains the variables for the hangman game implemented in Python.
 # The module is imported by the hangman_module module, which is used to determine the words for the game and the hangman ASCII art.
 
+"""
+This module contains the variables for the hangman game.
+
+There are 4 variables in this module:
+
+easy: A list of easy words for the user to guess in the hangman game.
+medium: A list of medium words for the user to guess in the hangman game.
+hard: A list of hard words for the user to guess in the hangman game.
+hangman_art: A list of ASCII art for the hangman game.
+"""
+
 # First I create a list of easy words for the user to guess in the hangman game.
 easy = ["code", "game", "python", "list", "loop", "string", "variable", "function", "class", "import"]
 # Then I create a list of medium words for the user to guess in the hangman game.
@@ -70,6 +81,10 @@ hangman_art = ["""
 
 # Then I define the help() function that prints a message that explains how to use the module.
 def help():
+    """
+    This function prints a message that explains how to use the module.
+    It lists the variables in the module and explains what they are used for.
+    """
     print()
     print("This module contains the variables for the hangman game.")
     print("There are 4 variables in this module:")

@@ -2,6 +2,17 @@
 # This is a module that contains the functions and core game logic for the hangman game.
 # The module is imported by the main script and used to run the game.
 
+"""
+This module contains the functions for the hangman game.
+
+There are 4 functions in this module:
+
+start(): This function prints a message that welcomes the user to the game.
+difficulty(difficulty_level): This function takes a difficulty level as an argument and returns a random word from the corresponding list found in the hangman_variables module.
+hangman(secret_word): This function takes a secret word that the difficulty function returns as an argument and runs the game.
+help(): This function prints a message that explains how to use the module.
+"""
+
 # First I import the choice function from the random module.
 from random import choice
 
@@ -16,6 +27,12 @@ match __name__:
 
 # Then I define the start() function that prints a message that welcomes the user to the game.
 def start():
+    """
+    Prints a welcome message to the user and explains the game's rules.
+
+    This function is called at the start of the game and is used to
+    introduce the user to the game and explain how to play.
+    """
     print("Welcome to Hangman Game!")
     print("Try to guess the word before the hangman appears!")
     print("You have 6 attempts to guess the word.")
@@ -24,6 +41,24 @@ def start():
 
 # Then I define the difficulty() function that takes a difficulty level as an argument and returns a random word from the corresponding list found in the hangman_variables module.
 def difficulty(difficulty_level):
+    """
+    Takes a difficulty level as an argument and returns a random word from the corresponding list found in the hangman_variables module.
+
+    Parameters
+    ----------
+    difficulty_level : str
+        The difficulty level of the word to be chosen.
+
+    Returns
+    -------
+    str
+        A random word from the list corresponding to the difficulty level.
+
+    Raises
+    ------
+    ValueError
+        If the difficulty level is invalid.
+    """
     match difficulty_level:
 #        If the difficulty level is easy, I return a random word from the easy list in the hangman_variables module.
         case "easy":
@@ -43,6 +78,27 @@ def difficulty(difficulty_level):
 
 # Then I define the hangman() function that takes a secret word as an argument and runs the core game logic.
 def hangman(secret_word):
+    """
+    Runs the core game logic for the hangman game.
+
+    Parameters
+    ----------
+    secret_word : str
+        The secret word to be guessed.
+
+    Returns
+    -------
+    None
+
+    Raises
+    ------
+    ValueError
+        If the secret word is invalid.
+
+    Notes
+    -----
+    This function is the core game logic for the hangman game. It takes a secret word as an argument and runs the game until the user guesses the word or runs out of attempts.
+    """
 #    I initialize the guessed_letters variable to an empty string and the attempts variable to 6.
     guessed_letters = ""
     attempts = 6
@@ -82,6 +138,12 @@ def hangman(secret_word):
 
 # Then I define the help() function that prints a message that explains how to use the module.
 def help():
+    """
+    Prints a message that explains how to use the module.
+
+    This function prints a message that explains how to use the module.
+    It lists the functions in the module and explains what they are used for.
+    """
     print()
     print("This module contains the functions for the hangman game.")
     print("There are 4 functions in this module:")
