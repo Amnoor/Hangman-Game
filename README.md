@@ -4,6 +4,35 @@ This repository contains a simple implementation of the classic Hangman game. Th
 
 
 
+## **Table Of Contents**
+
+- [Key Points](#key-points)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+
+
+## Key Points
+
+- Playable via the provided executable release or by running the Python scripts.
+- Library modules now include clear docstrings:
+  - library/hangman_module.py
+    - start(): prints a welcome and brief rules.
+    - difficulty(difficulty_level): returns a random word for "easy", "medium", or "hard".
+    - hangman(secret_word): runs the game loop for a given secret word.
+    - help(): prints a short description of available functions.
+  - library/hangman_variables.py
+    - easy, medium, hard: word lists by difficulty.
+    - hangman_art: ASCII art frames for wrong guesses.
+    - help(): prints a short description of the variables.
+
+
+
 ## **Features**
 
 - Different difficulty levels: easy, medium, and hard.
@@ -13,11 +42,13 @@ This repository contains a simple implementation of the classic Hangman game. Th
 
 
 
-## **Installation**
+## **Getting Started**
+
+### **Installation**
 
 To play the Hangman game, You need to install 3 things:
 
-1. Download the `Hangman Game v1.0.0.exe` from the Releases
+1. Download the latest `Hangman Game v1.0.0.exe` from the Releases
 2. Run the `Hangman Game v1.0.0.exe`
 
 
@@ -32,29 +63,14 @@ To play the Hangman game, You need to install 3 things:
 
 
 
-## **Contributing**
+## **Contribution**
 
 Contributions are welcome! If you find any bugs or have ideas for improvements, feel free to open Issue or submit a Pull Request, but if you are gonna make any changes and submit a Pull Request, you have to follow a specific rule:
 
-1. Check if the changes you are gonna make is already implemented in other branch (Specifically in the "develop" branch). If it's not implemented, then procced to the next step.
-
-2. Fork the Repository under your account.
-
-3. Create a branch off develop and name the branch following this rule: "[Your first name]/[The change your gonna make, example: refactor, feature, bugfix, hotfix, and etc.]/[A consice title of what changes your gonna make.]".
-
-4. Make your changes and commit in the branch you created.
-
-5. Make a Pull Request to merge the "[The branch you created]" branch to the "[Your account]/develop" branch.
-
-6. Create another branch off develop and name the branch: "[Your first name]/docs/update-readme.md".
-
-7. Update the README.md file and add your name in the under the "Acknowledgements" section, under the contributers.
-
-8. Make another Pull Request to merge the "[Your account]/docs/update-readme.md" branch to the "[Your account]/develop" branch.
-
-9. Make another Pull Request to merge the "[Your account]/develop" branch to the "Amnoor/develop" branch.
-
-10. Lastly, wait for a response or approval.
+1. Please fork the repository and create a branch off `develop` (e.g., `feature/your-feature`) and make your changes.
+2. After you’ve made your changes, **add your GitHub username** and link it to your GitHub profile in the [Acknowledgement](#acknowledgement) section (for example: `[YourName](https://github.com/YourName)`).
+3. Submit a pull request to the `develop` branch for review.
+4. Once `develop` is stable and well-tested, we’ll create a release branch (`release/vx.x.x`), merge into `main`, tag it, and publish.
 
 
 
@@ -66,7 +82,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## **Acknowledgements**
 
-- Thanks to everyone who has contributed to open-source projects and made this game possible.
+Thanks to everyone who has contributed to open-source projects and made this game possible.
   
-  ```Contributers
+  ```Achnowledgements
   ```
